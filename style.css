@@ -3,8 +3,8 @@
 
 
 :root {
-  --violet-background-color: #ff00ddb9;
-  --violet-border-color: #8f0e7d;
+  --violet-background-color: #a600ffb9;
+  --violet-border-color: #700098;
   --black-transparent: #00000057;
   --default-transition: .3s;
 }
@@ -61,11 +61,12 @@ header {
   width: 300px;
   text-align: center;
   text-decoration: none;
-  border: 3px solid;
+  border: 3px solid var(--violet-background-color);
   border-radius: 30px;
-  transition: var(--default-transition);
   background: transparent;
   outline: none;
+  color: var(--violet-background-color);
+  transition: var(--default-transition);
 }
 
 
