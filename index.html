@@ -3,50 +3,58 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Bio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Parkinsans:wght@300..800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>MyBio</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="container">
-                <div class="bio-container">
-                    <p>
-                        <b>Привет</b><br />
-                        Меня зовут Евгений. Я Frontend разработчик и дизайнер.
-                        Данный сайт это моё портфолио. Ниже есть ссылки на мои
-                        контакты и проекты.
+                <div class="bio">
+                    <h1 class="bio__title">Привет</h1>
+                    <p class="bio__text">
+                        Меня зовут Евгений. Я Frontend-разработчик и дизайнер.
+                        Данный сайт — это моё портфолио. Ниже вы найдёте ссылки
+                        на мои проекты и контакты.
                     </p>
-                    <a class="goto-btn" href="#projects">Дальше</a>
+                    <a class="bio__btn" href="#projects">Дальше</a>
                 </div>
             </div>
         </header>
-
-        <main>
-            <div class="container">
-                <div class="projects-list" id="projects">
-                    <div class="project">
-                        <div class="project-preview">
-                            <img
-                                class="project-preview"
-                                src="https://i.ytimg.com/vi/PVsu04c_iSo/maxresdefault.jpg"
-                            />
-                        </div>
-                        <a class="project-container" href=""
-                            ><ligth>Мое портфолио</ligth></a
-                        >
+        <main class="main">
+            <section id="projects" class="projects">
+                <div class="container">
+                    <div class="projects__list">
+                        <article class="project">
+                            <div class="project__image">
+                                <img
+                                    src="https://i.ytimg.com/vi/PVsu04c_iSo/maxresdefault.jpg"
+                                    alt="preview"
+                                />
+                            </div>
+                            <a class="project__link" href="https://github.com/martunovZheka/MyBioWeb" target="_blank">
+                                Мое портфолио
+                            </a>
+                        </article>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
-
-        <footer>
+        <footer class="footer">
             <div class="container">
-                <ul class="my-contacts-list">
-                    <li>
-                        <a href="https://github.com/martunovZheka">GitHub</a>
-                    </li>
+                <ul class="contacts_list">
+                    <li><a href="https://github.com/martunovZheka">Github</a></li>
                 </ul>
             </div>
         </footer>
+        <div class="error_popup">
+            <h1 class="error_popup__title">Данный формат не работает :(</h1>
+        </div>
     </body>
 </html>
